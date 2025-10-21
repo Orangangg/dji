@@ -49,21 +49,42 @@ margin-bottom: 0px !important;
 }
 
 
-/* Запросить коммерческое предложение/счет */
+/* Шейп для блока "Запросить коммерческое предложение/счёт */
 
 .t-store-prod__text, .js-store-prod-text {
-    display: block !important; /* Подложка будет растягиваться на всю ширину */
-    background-color: #F1F1F1 !important; /* Светло-серый фон */
-    padding: 20px 20px !important; /* Отступы */
-    border-radius: 15px !important; /* Скругление углов */
-    width: 100% !important; /* Растягиваем на всю ширину родительского блока */
-    box-sizing: border-box !important; /* Учитываем padding в ширине */
-    text-align: left !important; /* Выравнивание текста влево */
-    white-space: normal !important; /* Текст будет переноситься */
+    display: block !important; /* Блоковый элемент */
+    background-color: transparent !important; /* Убираем заливку */
+    border: 1px dashed #d7d7d7 !important; /* Пунктирная серая обводка */
+    border-radius: 10px !important; /* Скругляем углы */
+    padding: 18px 20px !important; /* Отступы */
+    width: 100% !important; /* На всю ширину */
+    box-sizing: border-box !important; /* Корректные размеры */
+    text-align: left !important; /* Выравнивание по левому краю */
+    color: #333333 !important; /* Основной цвет текста */
+    font-size: clamp(14px, 2vw, 17px) !important; /* Адаптивный размер */
+    line-height: 1.5 !important; /* Читаемость текста */
+    font-weight: 400 !important;
 }
 
-body, html {
-    overflow-x: hidden;
+/* Ссылки внутри блока */
+.t-store-prod__text a, .js-store-prod-text a {
+    color: #0055ff !important; /* Акцентная синяя ссылка */
+    font-weight: 600 !important;
+    text-decoration: underline !important; /* Как в уведомлении */
+    transition: color 0.2s ease !important;
+}
+
+/* Ховер-состояние для ссылок */
+.t-store-prod__text a:hover, .js-store-prod-text a:hover {
+    color: #003bb3 !important; /* Тёмно-синий при наведении */
+}
+
+/* Адаптив */
+@media (max-width: 640px) {
+    .t-store-prod__text, .js-store-prod-text {
+        padding: 14px 16px !important;
+        font-size: clamp(14px, 3vw, 16px) !important;
+    }
 }
 
 
@@ -95,3 +116,4 @@ body, html {
 /* Кнопка в корзину (починил) */
 
 .t-store__prod-popup__btn[href="#order"]{--tp-btnfix:1;background-color:#44474a!important;color:#fff!important;opacity:1!important;visibility:visible!important;border:none!important;border-radius:100!important;transition:background-color .25s ease,color .25s ease!important}.t-store__prod-popup__btn[href="#order"]:hover,.t-store__prod-popup__btn[href="#order"]:focus{background-color:#44474a!important;opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important}.t-store__prod-popup__btn-wrapper .t-btn:hover,.t-store__prod-popup__btn-wrapper .t-btn:focus{opacity:1!important;filter:none!important;transform:none!important}.t-store__prod-popup__btn[href="#order"] .js-store-prod-popup-buy-btn-txt{opacity:1!important;visibility:visible!important}@media screen and (max-width:640px){.t-store__prod-popup__btn[href="#order"]{font-size:clamp(14px,2vw,16px);padding:12px 20px}}
+
