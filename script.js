@@ -32,5 +32,8 @@ window.onload = function () {
 
 
 
+//Скрипт для корзины
+
+(function(){"use strict";function o(){try{if("function"==typeof window.tcart__openCart)return void window.tcart__openCart();const t=document.querySelector(".t706__carticon");if(t)return void t.click();document.body.classList.add("t706__body_cartwinshowed")}catch(t){}}function t(){const t=document.querySelector(".t706__carticon-counter");if(!t)return 0;const e=parseInt(t.textContent.trim(),10);return isNaN(e)?0:e}function e(){const o=t();document.querySelectorAll(".tp-cart-count").forEach((t=>{t.textContent!==String(o)&&(t.textContent=String(o))}))}function n(){const o=document.querySelector(".t706__carticon-counter");if(!o)return!1;e();const t=new MutationObserver(e);return t.observe(o,{childList:!0,subtree:!0,characterData:!0}),!0}function c(){document.querySelectorAll(".cart").forEach((o=>{o.hasAttribute("role")||o.setAttribute("role","button"),o.hasAttribute("tabindex")||o.setAttribute("tabindex","0")}))}function r(t){const e=t.target.closest(".cart");if(!e)return;const n=t.key;("Enter"===n||" "===n||"Spacebar"===n)&&(t.preventDefault(),e.click())}function a(){const o=[300,800,1600,3200,6000];let t=!1;o.forEach((o=>{setTimeout((()=>{t||(t=n()),t&&e()}),o)})),setInterval(e,3e3),c(),document.addEventListener("keydown",r,!1)}document.addEventListener("click",(t=>{const e=t.target.closest(".cart");e&&(t.preventDefault(),o())}),!1),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",a):a()})();
 
 
