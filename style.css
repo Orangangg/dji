@@ -2,8 +2,8 @@
 
 
 .t-store.t-store__prod-snippet__container {
-padding-top: 0px!important;
-padding-bottom: 0px!important;
+padding-top: 20px!important;
+padding-bottom: 100px!important;
 }
 
 .t758__list {
@@ -116,4 +116,5 @@ margin-bottom: 0px !important;
 /* Кнопка в корзину (починил) */
 
 .t-store__prod-popup__btn[href="#order"]{--tp-btnfix:1;background-color:#44474a!important;color:#fff!important;opacity:1!important;visibility:visible!important;border:none!important;border-radius:100!important;transition:background-color .25s ease,color .25s ease!important}.t-store__prod-popup__btn[href="#order"]:hover,.t-store__prod-popup__btn[href="#order"]:focus{background-color:#44474a!important;opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important}.t-store__prod-popup__btn-wrapper .t-btn:hover,.t-store__prod-popup__btn-wrapper .t-btn:focus{opacity:1!important;filter:none!important;transform:none!important}.t-store__prod-popup__btn[href="#order"] .js-store-prod-popup-buy-btn-txt{opacity:1!important;visibility:visible!important}@media screen and (max-width:640px){.t-store__prod-popup__btn[href="#order"]{font-size:clamp(14px,2vw,16px);padding:12px 20px}}
+
 
