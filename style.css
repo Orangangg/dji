@@ -1,3 +1,40 @@
+/* Стили для кнопки WhatsApp */
+
+
+.t-store__prod-popup__btn-wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: calc(50% - 4px) calc(50% - 4px);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    align-items: center;
+}
+.t-store__prod-popup__btn-wrapper a.whatsapp-order {
+    padding: 18px;
+    height: 43px;
+    border: 1px solid #24d366;
+    border-radius: 40px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    color: #24d366 !important;
+    justify-content: center;
+    font-family: 'Open Sans';
+    white-space: nowrap;
+    font-size:14px;
+}
+.t-store__prod-popup__btn-wrapper a.whatsapp-order:hover {
+    background: #24d366;
+    color: #fff !important;
+}
+
+.uc-hidden {
+    display: none !important;
+}
+
+
+
+
 /*Убрать полосу прокрутки для всей страницы*/ ::-webkit-scrollbar {  width: 0;}
 
 
@@ -73,6 +110,7 @@ margin-bottom: 0px !important;
 /* Стили для старой цены */
 
 .t-store__prod-popup__price-wrapper .t-store__prod-popup__price_old{display:none!important}.tp-price-card__value{font-family:"SF Pro Display","SFProDisplayMedium",system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;font-size:clamp(13px,2vw,15px)!important;line-height:1.2!important;font-weight:600!important;color:var(--tp-text,#323232)!important;display:inline-flex!important;align-items:baseline!important;gap:8px!important;white-space:nowrap!important}.tp-price-card__value .tp-now{font:inherit!important;color:inherit!important}.tp-price-card__value .tp-old{position:relative!important}.tp-price-card__value .tp-old::before{content:attr(data-old)!important;font-family:"SF Pro Display","SFProDisplayMedium",system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;font-size:clamp(11px,1.6vw,13px)!important;font-weight:400!important;color:#9EA3AA!important;text-decoration:line-through!important;text-decoration-thickness:1px!important;text-decoration-color:currentColor!important;opacity:.95!important}.tp-price-card__value .tp-old[hidden]::before{content:''!important}@media (max-width:640px){.tp-price-card__value{gap:6px!important}}@media (max-width:480px){.tp-price-card__value{gap:6px!important}.tp-price-card__value .tp-old::before{font-size:clamp(10px,3.4vw,12px)!important}}@media (max-width:320px){.tp-price-card__value{gap:4px!important}.tp-price-card__value .tp-old::before{font-size:clamp(10px,4vw,11px)!important}}@media (max-width:466px){.tp-price-card__value{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:2px!important;white-space:normal!important}.tp-price-card__value .tp-old::before{display:block!important;margin-top:2px!important;font-size:clamp(10px,3.4vw,12px)!important}} .t-store__card__price_old .t-store__card__price-value,.t-store__card__price_old .t-store__card__price-currency{position:relative;top:-1px;line-height:1}.t-store__card__price_old{display:inline-flex;align-items:baseline;gap:4px}@media(max-width:480px){.t-store__card__price_old .t-store__card__price-value,.t-store__card__price_old .t-store__card__price-currency{top:-.5px}}
+
 
 
 
