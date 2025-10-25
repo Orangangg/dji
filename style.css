@@ -11,44 +11,6 @@ margin-bottom: 0px !important;
 }
 
 
-
-
-
-/* Стили для кнопки WhatsApp */
-
-
-.t-store__prod-popup__btn-wrapper {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: calc(50% - 4px) calc(50% - 4px);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    align-items: center;
-}
-.t-store__prod-popup__btn-wrapper a.whatsapp-order {
-    padding: 18px;
-    height: 43px;
-    border: 1px solid #24d366;
-    border-radius: 40px;
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    color: #24d366!important;
-    justify-content: center;
-    font-family: 'Open Sans';
-    white-space: nowrap;
-    font-size:14px;
-}
-.t-store__prod-popup__btn-wrapper a.whatsapp-order:hover {
-    background: #24d366;
-    color: #fff!important;
-}
-
-.uc-hidden {
-    display: none!important;
-}
-
-
 /* Шейп для блока "Запросить коммерческое предложение/счёт */
 
 .t-store-prod__text, .js-store-prod-text {
@@ -116,6 +78,7 @@ margin-bottom: 0px !important;
 /* Кнопка в корзину (починил) */
 
 .t-store__prod-popup__btn[href="#order"]{--tp-btnfix:1;background-color:#44474a!important;color:#fff!important;opacity:1!important;visibility:visible!important;border:none!important;border-radius:100!important;transition:background-color .25s ease,color .25s ease!important}.t-store__prod-popup__btn[href="#order"]:hover,.t-store__prod-popup__btn[href="#order"]:focus{background-color:#44474a!important;opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important}.t-store__prod-popup__btn-wrapper .t-btn:hover,.t-store__prod-popup__btn-wrapper .t-btn:focus{opacity:1!important;filter:none!important;transform:none!important}.t-store__prod-popup__btn[href="#order"] .js-store-prod-popup-buy-btn-txt{opacity:1!important;visibility:visible!important}@media screen and (max-width:640px){.t-store__prod-popup__btn[href="#order"]{font-size:clamp(14px,2vw,16px);padding:12px 20px}}
+
 
 
 
